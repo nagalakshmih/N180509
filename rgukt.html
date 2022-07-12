@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rgukt</title>
+    <link rel="stylesheet" href="styles.css">
+        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        
+        <p class="h2">RGUKT</p>
+        <span onclick="toggle()">&equiv;</span>
+        <img src="images/N180509 (2).jpg" class="logo">
+        <div class="details">
+            <p>P.NAGALSHMI<br>N180509</p>
+        </div>
+    <nav class="navbar">
+        <ul class="nav-items">
+            <li>
+                <a><i class="fa fa-home" active></i> HOME</a>
+            </li>
+            <li class="li" id="sub" >
+                <a><i class="fa fa-hourglass"></i> EXAM</a>
+                <ul class="sub-list1" id="exam" style="display: none;">
+                    <li><a href="register.html" target="main">REGISTER</a></li>
+                    <li><a href="login.html" target="main">LOGIN</a></li>
+                </ul>
+            </li>
+            <li class="li" id="sub1">
+                <a><i class="fa fa-wrench"></i> BRANCH</a>
+                <ul class="sub-list2" id="branch" style="display: none;">
+                    <li>MECH</li>
+                    <li>CIVIL</li>
+                    <li id="sub12">CSE
+                        <ul class="sub-list21" id='subbranch' style="display: none;">
+                            <li><a href="faculty.html" target="main">FACULTY</a></li>
+                            <li><a href="student.html" target="main">STUDENT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="li">
+                <a href="contact.html"><i class="fa fa-phone"></i> CONTACT</a>
+            </li>
+            
+        </ul>
+        
+    </nav >
+    <nav class="navbar1" id="nav" style="display: none;">
+        <ul class="nav-items1">
+            <li class="li">
+                <a href="rgukt.html">
+                <a>
+                    <i class="fa fa-home" active></i>
+                </a>
+                
+            </li>
+            <li class="li" id="sub3">
+                <a>
+                    <i class="fa fa-hourglass"></i>
+                </a>
+                <ul class="sub-list1" id="exam1" style="display: none;">
+                    <li><a href="register.html" target="main">REGISTER</a></li>
+                    <li><a href="login.html" target="main">LOGIN</a></li>
+                </ul> 
+            </li>
+            <li class="li" id="sub4">
+                <a>
+                    <i class="fa fa-wrench"></i>
+                </a>   
+                <ul class="sub-list2" id="branch1" style="display: none;">
+                    <li>MECH</li>
+                    <li>CIVIL</li>
+                    <li id="sub42">CSE
+                        <ul class="sub-list21" id="subbranch1" style="display: none;">
+                            <li><a href="faculty.html" target="main">FACULTY</a></li>
+                            <li><a href="student.html" target="main">STUDENT</a></li>
+                        </ul>
+                    </li>
+                </ul>   
+            </li>
+            <li class="li">
+                <a href="contact.html">
+                    <i class="fa fa-phone"></i>
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+       
+    <div class="main">
+        <div class="filter"><table><tr><th><b>Student<br></b><input type="text" id="key"></th></tr><tr><td>N180696</td></tr><tr><td>N183729</td></tr><tr><td>N180398</td></tr><tr><td>N180595</td></tr><tr><td>N180324</td></tr><tr><td>N180391</td></tr><tr><td>N181023</td></tr><tr><td>N160561</td></tr><tr><td>N160786 </td></tr><tr><td>N171220 </td></tr><tr><td>N180016 </td></tr><tr><td>N180032 </td></tr><tr><td>N180039 </td></tr><tr><td>N180043 </td></tr><tr><td>N180044 </td></tr><tr><td>N180046 </td></tr><tr><td>N180055 </td></tr><tr><td>N180103 </td></tr><tr><td>N180143 </td></tr><tr><td>N180173 </td></tr><tr><td>N180175 </td></tr><tr><td>N180190 </td></tr><tr><td>N180236 </td></tr><tr><td>N180239 </td></tr><tr><td>N180247 </td></tr><tr><td>N180266 </td></tr><tr><td>N180372 </td></tr><tr><td>N180423 </td></tr><tr><td>N180438 </td></tr><tr><td>N180446 </td></tr><tr><td>N180451 </td></tr><tr><td>N180468 </td></tr><tr><td>N180598 </td></tr><tr><td>N180663 </td></tr><tr><td>N180687 </td></tr><tr><td>N180709 </td></tr><tr><td>N180763 </td></tr><tr><td>N180764 </td></tr><tr><td>N180775 </td></tr><tr><td>N180776 </td></tr><tr><td>N180816</td></tr><tr><td>N180994 </td></tr><tr><td>N181014 </td></tr><tr><td>N181027 </td></tr><tr><td>N181040 </td></tr><tr><td>N181046 </td></tr><tr><td>N181059 </td></tr><tr><td>N181075 </td></tr><tr><td>N181110 </td></tr><tr><td>N180624 </td></tr><tr><td>N180863 </td></tr><tr><td>N180866 </td></tr><tr><td>N180990 </td></tr><tr><td>N180942 </td></tr><tr><td>N180887 </td></tr><tr><td>N180876 </td></tr><tr><td>N171250 </td></tr><tr><td>N180664</td></tr></table></div>
+        <div class="slideshow">
+            <!-- <div class="transparent"></div> -->
+            <div class="slider">
+                <div class="slides">
+                    
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="slide first">
+                        <img src="images/rgukt.jpg" >
+                    </div>
+                    <div class="slide">
+                        <img src="images/rgukt1.jpg" >
+                    </div>
+                    <div class="slide">
+                        <img src="images/rgukt2.jpg" >
+                    </div>
+                    <div class="slide">
+                        <img src="images/student.jpeg" >
+                    </div>
+                </div>
+                <div class="navigation auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+        <div class="marquee">
+        <marquee direction="down"height="600px " style="text-align: Centre"> Chancellor
+            vcjp
+            Prof. K.C.Reddy
+            Chancellor
+            
+            Professor K.C.Reddy, a Doctorate in Economics; <br>Taught Economics at Andhra University for over three decades;<br> Acclaimed as a Teacher and Researcher par excellence by his students and peers;<br> Authored many books and papers; Occupied several administrative positions like Director, <br>Academic Staff College, and SAARC Studies Centre; Board of Management Member and Vice-Chancellor-in-charge at Andhra University; <br>Chairman, A.P.State Council of Higher Education for two terms;
+            Vice-Chancellor
+vcjp
+Prof.K Hemachandra Reddy
+Vice-Chancellor (FAC)
+Prof. K. Hemachandra Reddy has more than 30 years of teaching<br>
+May
+13
+Circular for payment of Jagananna vidya deevena instalment for the period of Jan, <br>Feb and March of the academic year 2021-2022»
+Mar<br>
+15
+Circular to Students regarding Nuzvid Mess Timings»
+Dec
+21<br>
+Circular to students regarding FoodCourt»
+Dec
+21
+Circular to in-campus students regarding Covid-19 Protocol»
+
+view all  & research experience in the field of Mechanical Engineering. <br>He is specialized in the areas of thermal engineering, Computational Fluid Dynamics; <br>He has published more than 135 technical papers in various national and international journals with 1466 citations and h-Index of 19. <br>He has executed externally funded research projects sponsored by DRDO to the tune of Rs. 30 Lakhs and Rs 30 Lakhs in the area of PCM based Thermal energy storage applications sanctioned by SERB are in progres
+            </marquee>
+        <!-- <div class="notify">
+            <ul class="notify-list">
+                <li>INFORMATION-1</li>
+                <li>INFORMATION-2</li>
+                <li>INFORMATION-3</li>
+                <li>INFORMATION-4</li>
+                <li>INFORMATION-5</li>
+            </ul>
+        </div> -->
+        </div>
+    </div>
+    <footer>
+        &COPY; RGUKT NUZIVD
+    </footer>
+    <script>
+        var exam=document.getElementById('exam');
+        var sub=document.getElementById('sub');
+        function toggle(){
+            var id=document.getElementById('nav');
+            if(id.style.display=='none'){
+                id.style.display='block'
+            }
+            else{
+                id.style.display='none'
+            }
+        }
+        var li=document.getElementById('sub')   
+        var exam=document.getElementById('exam')
+        var li1=document.getElementById('sub1')
+        var li2=document.getElementById('sub12')   
+        var branch=document.getElementById('branch')
+        var subbranch=document.getElementById('subbranch')
+        var li3=document.getElementById('sub3')   
+        var exam1=document.getElementById('exam1')
+        var li4=document.getElementById('sub4')
+        var li5=document.getElementById('sub42')   
+        var branch1=document.getElementById('branch1')
+        var subbranch1=document.getElementById('subbranch1')
+        function display(){
+            exam.style.display='block'
+        } 
+        function remove(){
+            exam.style.display='none'
+        } 
+        function display1(){
+            branch.style.display='block'
+        } 
+        function remove1(){
+            branch.style.display='none'
+            subbranch.style.display='none'
+        }
+        function display2(){
+            subbranch.style.display='block'
+        }
+
+        function display3(){
+            exam1.style.display='block'
+        } 
+        function remove3(){
+            exam1.style.display='none'
+        } 
+        function display4(){
+            branch1.style.display='block'
+        } 
+        function remove4(){
+            branch1.style.display='none'
+            subbranch1.style.display='none'
+        }
+        function display5(){
+            subbranch1.style.display='block'
+        }    
+        li.addEventListener('mouseover',display)
+        exam.addEventListener('mouseout',remove)
+        li1.addEventListener('mouseover',display1)
+        branch.addEventListener('mouseout',remove1)
+        li2.addEventListener('mouseover',display2)
+
+        li3.addEventListener('mouseover',display3)
+        exam1.addEventListener('mouseout',remove3)
+        li4.addEventListener('mouseover',display4)
+        branch1.addEventListener('mouseout',remove4)
+        li5.addEventListener('mouseover',display5)
+        add.addEventListener('click',additem);
+        filter.addEventListener('click',removeitem);
+        searchbar.addEventListener('keyup',filtering)
+
+    </script>
+</body>
+</html>
+	
+	
+	

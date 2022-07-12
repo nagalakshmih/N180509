@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+.login{
+    position: absolute;
+    top:25%;
+    left:35%;
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+    border: 3px solid rgb(128, 0, 26);
+    background-color: rgb(128, 0, 38);
+    box-shadow: 0px 0px 30px 0px black;
+    color: white;
+}
+form{
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+input[type='submit']{
+    background-color: white;
+    font-weight: bold;
+    color: rgb(212, 21, 104);
+    margin-top: 30px;
+    margin-left: 150px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">LOGIN FORM</h2>
+    <div class="login">
+        <form action="login.php" onclick="return validate()">
+            <label for="">USERNAME</label>
+                <input type="text"><br><br>
+                <label for="">PASSWORD</label>
+                <input type="text"><br><br>
+           <input type=submit value="login">
+        </form>
+    </div>
+    
+    </script>
+    </body>
+    </html>
